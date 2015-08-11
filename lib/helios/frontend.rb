@@ -19,10 +19,10 @@ module Helios
     use Rack::BounceFavicon
 
     assets do
-      serve '/javascripts', from: '/javascripts'
-      serve '/stylesheets', from: '/stylesheets'
-      serve '/images', from: '/images'
-      serve '/fonts', from: '/fonts'
+      serve '/javascripts', from: 'javascripts'
+      serve '/stylesheets', from: 'stylesheets'
+      serve '/images', from: 'images'
+      serve '/fonts', from: 'fonts'
 
       js :application, '/javascripts/application.js', [
         '/javascripts/vendor/jquery.js',
